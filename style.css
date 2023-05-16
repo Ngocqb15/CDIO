@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans_serif;
+}
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    background: red;
+}
+header h1{
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+header p{
+    text-align: center;
+    font-size: 16px;
+    color: aliceblue;
+}
+nav{
+    height: 35px;
+    background: blue;
+    margin-bottom: 5px;
+}
+nav .menu ul{
+    list-style: none;
+}
+nav .menu li{
+    position: relative;
+}
+nav .menu ul li {
+    float: left;
+    line-height: 35px;
+    padding: 0 15px;
+}
+
+
+nav .menu ul li a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+  
+nav  .login-buttons a {
+    display: inline-block;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    text-decoration: none;
+    font-size: 12px;
+}
+nav .search{
+    line-height: 35px;
+    float: right;
+}
+article h2{
+    text-align: center;
+    color: blueviolet;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+article .newlist .new_1{
+    width: 27%;
+    padding: 3%;
+    margin: 0;
+    float: left; 
+}
+article h4{
+    text-align: center;
+    color: blueviolet;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+article .newlist2 .new_2{
+    width: 27%;
+    padding: 3%;
+    margin: 0;
+    float: left; 
+}
