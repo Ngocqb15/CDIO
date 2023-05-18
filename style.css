@@ -36,23 +36,72 @@ nav .menu ul li {
     float: left;
     line-height: 35px;
     padding: 0 15px;
+    position: relative;
 }
-
-
 nav .menu ul li a{
     color: white;
     font-size: 12px;
     text-decoration: none;
+    position: relative;
+    display: block;
+    
+}
+nav .menu ul li:hover{
+    background: gray;
+    border-radius: 3px;
+}
+nav .menu ul li a::after{
+     content: "";
+     position: absolute;
+     height: 3px;
+     width: 100%;
+     transform: scaleX(0);
+     background-color: rgb(255, 47, 47);
+     bottom: 0;
+     left: 0;
+     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav .menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+nav ul.submenu{
+    width: 120px;
+    background: blue;
+    min-height: 150px;
+    display: none;
+    position: absolute;
+}
+nav ul.submenu li  {
+   list-style: none;
+}
+
+nav ul.submenu li a{
+   color: aliceblue;
+   text-decoration: none;
+   display: block;
+   width: 90px;
+   line-height: 40px;
+   text-indent: 10px;
+}
+nav ul.submenu li a:hover {
+    background: grey;
+    border-radius: 3px;
+}
+nav ul > li:hover ul.submenu {
+    display: block;
 }
   
 nav  .login-buttons a {
+    text-align: right;
     display: inline-block;
     color: white;
-    padding: 12px 10px;
+    padding: 10px 10px;
     border: none;
     text-decoration: none;
     font-size: 12px;
 }
+
+
 nav .search{
     line-height: 35px;
     float: right;
@@ -68,6 +117,10 @@ article .newlist .new_1{
     padding: 3%;
     margin: 0;
     float: left; 
+}
+ /* xoa dau gach duoi the a */
+a {
+    text-decoration: none;
 }
 article h4{
     text-align: center;
