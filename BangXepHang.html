@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bảng Xếp Hạng</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="BangXepHang.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>NEWSPORT</h1>
+                <p>Website tin tức thể thao nhanh nhất-chính xác nhất</p>
+            </header>
+        <table>
+        <thead>
+            <tr>
+              <th>Tên đội bóng</th>
+              <th>Số trận thắng</th>
+              <th>Số trận hòa</th>
+              <th>Số trận thua</th>
+              <th>Số bàn thắng</th>
+              <th>Số bàn thua</th>
+              <th>Điểm số</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <script>
+                // Sử dụng JavaScript để truy vấn dữ liệu từ cơ sở dữ liệu và hiển thị các bản ghi trong bảng HTML
+                const tableBody = document.getElementById('diem_so');
+              
+                fetch('url-to-api-endpoint')
+                  .then(response => response.json())
+                  .then(data => {
+                    data.forEach(row => {
+                      const tr = document.createElement('tr');
+                      tr.innerHTML = `
+                        <td>${row.ten}</td>
+                        <td>${row.so_tran_thang}</td>
+                        <td>${row.so_tran_hoa}</td>
+                        <td>${row.so_tran_thua}</td>
+                        <td>${row.so_ban_thang}</td>
+                        <td>${row.so_ban_thua}</td>
+                        <td>${row.diem_so}</td>
+                      `;
+                      tableBody.appendChild(tr);
+                    });
+                  });
+              </script>
+          </tbody>
+        </table>
+    </body>
+</html>
