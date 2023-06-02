@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
+<head>
     <title></title>
-    <link rel="stylesheet" type="text/css"
-    href="Dangky.css">
+    <link rel="stylesheet" type="text/css" href="Dangky.css">
 </head>
 <body>
     <div class="image-container">
-        <img src="../Ảnh/tintuctt.jpg">
-      </div>
-    <div class="dangky">
-       <h2> Đăng Kí </h2>
-       <br> 
-       <p> Tên đăng nhập </p>
-       <input type="text" placeholder="Username">
-       <br>
-       <p> Mật khẩu </p>
-       <input type="password" placeholder="Password">
-       <br>
-       <p> Địa chỉ email </p>
-       <input type="text" placeholder="Email">
-       <br> 
-       <p> Họ và tên </p>
-       <input type="text" placeholder="Full name"> 
-       <br>
-       <br>
-       <button type="submit">Đăng kí</button>     
+        <img src="tintuctt.jpg">
     </div>
+    <form onsubmit="event.preventDefault(); DangKyThanhCong();">
+        <div class="dangky">
+            <h2> Đăng Kí </h2>
+            <br> 
+            <p> Tên đăng nhập </p>
+            <input type="text" id="usernameInput" placeholder="Username">
+            <br>
+            <p> Mật khẩu </p>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <br>
+            <p> Địa chỉ email </p>
+            <input type="text" id="emailInput" placeholder="Email">
+            <br> 
+            <p> Họ và tên </p>
+            <input type="text" id="fullNameInput" placeholder="Full name"> 
+            <br>
+            <br>
+            <button id="signupButton">Đăng ký</button>
+            <p id="message"></p>    
+        </div>
+    </form>
+    <script src="./main.js"></script>
 </body>
 </html>

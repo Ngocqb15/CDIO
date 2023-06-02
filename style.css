@@ -40,7 +40,7 @@ nav .menu ul li {
 }
 nav .menu ul li a{
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
     position: relative;
     display: block;
@@ -67,7 +67,7 @@ nav .menu ul li a:hover::after{
 nav ul.submenu{
     width: 120px;
     background: blue;
-    min-height: 160px;
+    min-height: 150px;
     display: none;
     position: absolute;
 }
@@ -82,7 +82,6 @@ nav ul.submenu li a{
    width: 90px;
    line-height: 40px;
    text-indent: 10px;
-   font-size: 14px;
 }
 nav ul.submenu li a:hover {
     background: grey;
@@ -93,20 +92,15 @@ nav ul > li:hover ul.submenu {
 }
   
 nav  .login-buttons a {
-    height: 15px;
+    text-align: right;
     display: inline-block;
-    color: black;
-    padding: 10px 20.2px;
+    color: white;
+    padding: 10px 10px;
     border: none;
     text-decoration: none;
-    font-size: 18px;
-    background: greenyellow;
+    font-size: 12px;
 }
 
-nav  .login-buttons a:hover{
-    background: gray;
-    border-radius: 3px;
-}
 
 nav .search{
     line-height: 35px;
